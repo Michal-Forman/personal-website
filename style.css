@@ -1,0 +1,259 @@
+:root {
+  --black: #161a30;
+  --blue: #31304d;
+  --white: #f0ece5;
+  --gray: #b6bbc4;
+}
+
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+  background: var(--blue);
+}
+
+body {
+  margin: 0;
+}
+
+nav {
+  width: 100%;
+  height: 100px;
+  background: var(--black);
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+a {
+  text-decoration: none;
+}
+
+.navbar_container {
+  width: 40%;
+  height: 100%;
+  display: flex;
+}
+
+#title_container {
+  margin-left: 63px;
+  justify-content: left;
+  align-items: center;
+}
+
+#navlinks_container {
+  margin-right: 63px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#download_cv_button {
+  width: 287 px;
+  height: 50px;
+  background: var(--gray);
+  border-radius: 50px;
+  display: flex;
+  align-content: center;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+h3 {
+  font-size: 1.25rem;
+  color: var(--white);
+}
+
+p {
+  font-size: 1rem;
+  color: var(--white);
+}
+
+#title {
+  color: var(--white);
+}
+
+#download_cv_text {
+  align-self: center;
+  color: var(--black);
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+#center_image {
+  margin-top: 50px;
+  height: 600px;
+}
+
+.card_container {
+  position: absolute;
+  animation: card_flying 2s infinite;
+}
+
+@keyframes card_flying {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.card {
+  width: 300px;
+  height: 180px;
+  background: var(--black);
+  border-radius: 30px;
+  border: 3px solid var(--gray);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  transition: transform 0.5s;
+}
+
+.card:hover {
+  transform: scale(1.1);
+}
+
+.mini_rectangle {
+  position: absolute;
+  bottom: 40px;
+  left: -50px;
+  width: 100px;
+  height: 100px;
+  background: var(--black);
+  border-radius: 30px;
+  border: 3px solid var(--gray);
+}
+
+.icon {
+  width: 80px;
+  height: 80px;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.card_title {
+  margin-left: 70px;
+}
+
+.card_title h2 {
+  display: inline-block;
+  color: var(--white);
+  margin-bottom: 0;
+}
+
+.card p {
+  margin-left: 70px;
+  margin-right: 10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+hr {
+  margin-right: 30px;
+}
+
+a:visited {
+  color: var(--white);
+}
+
+a:active {
+  color: var(--white);
+}
+
+#programming_card {
+  top: 19vh;
+  left: 12vw;
+}
+
+#hobbies_card {
+  top: 65vh;
+  left: 5vw;
+}
+
+#start-up_card {
+  top: 55vh;
+  left: 75vw;
+}
+
+nav a {
+  transition: transform 0.5s;
+}
+
+nav a:hover {
+  transform: scale(1.1);
+}
+
+/* Small laptops */
+@media only screen and (max-width: 1250px) {
+  main {
+    justify-content: flex-start;
+  }
+
+  #center_image {
+    margin-top: 50px;
+    height: 500px;
+  }
+
+  .card {
+    height: 150px;
+  }
+
+  .mini_rectangle {
+    bottom: 25px;
+    left: -40px;
+    width: 100px;
+    height: 100px;
+  }
+
+  .card_container {
+    left: 50vw !important;
+  }
+
+  #programming_card {
+    top: 20vh;
+  }
+
+  #hobbies_card {
+    top: 45vh;
+    animation-delay: 0.25s;
+  }
+
+  #start-up_card {
+    top: 70vh;
+    animation-delay: 0.5s;
+  }
+
+  @keyframes card_flying {
+    0%,
+    100% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(20px);
+    }
+  }
+}
+
+@media only screen (max-width: 800px) {
+}
