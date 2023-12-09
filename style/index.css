@@ -26,6 +26,12 @@ body {
 }
 
 h1 {
+  font-size: 2rem;
+  font-weight: 1000;
+  margin: 0;
+}
+
+h2 {
   font-size: 1rem;
   font-weight: 1000;
   margin: 0;
@@ -67,7 +73,7 @@ nav {
   height: 100%;
 }
 
-#logo_container h1 {
+#logo_container h2 {
   margin-left: 10px;
   color: var(--color-white);
 }
@@ -147,4 +153,80 @@ nav {
 
 #dropdown-content button:hover {
   color: var(--color-white);
+}
+
+#fixed_social_media {
+  position: fixed;
+  top: 0;
+  left: 17px;
+  width: 32px;
+  background-color: var(--color-background);
+  display: flex;
+  flex-direction: column;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#line_down {
+  height: 191px;
+  width: 1px;
+  background-color: var(--color-gray);
+  margin-bottom: 10px;
+}
+
+#fixed_social_media a {
+  height: 20px;
+  margin-bottom: 10px;
+}
+
+#fixed_social_media img {
+  height: 20px;
+}
+
+#hero_text {
+  position: absolute;
+  top: 197px;
+  left: 10%;
+  max-width: 537px;
+  display: flex;
+  flex-direction: column;
+}
+
+#hero_text h1 {
+  color: var(--color-white);
+}
+
+#hero_text p {
+  margin: 32, 0, 32, 0;
+  color: var(--color-gray);
+}
+
+#hero_text a {
+  width: 138px;
+  height: 37px;
+  background-color: var(--color-background);
+  border: 1px solid var(--color-primary);
+  color: var(--color-white);
+  cursor: pointer;
+  transition: background-color 0.5s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#hero_text h2 {
+  font-weight: 500;
+}
+
+#hero_text a:hover {
+  background-color: var(--color-primary);
+  color: var(--color-background);
+}
+
+#hero_image {
+  position: absolute;
+  top: 136px;
+  left: calc(90% - 453px);
+  height: 373px;
 }
