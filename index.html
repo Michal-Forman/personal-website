@@ -4,85 +4,34 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Michal Forman</title>
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./style/index.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
     />
+    <link rel="icon" href="./IMG/favicon.png" type="image/x-icon" />
   </head>
   <body>
     <nav>
-      <div id="title_container" class="navbar_container">
-        <h1 id="title">Michal Forman</h1>
+      <div id="logo_container">
+        <img id="nav_logo" src="IMG/logo.svg" />
+        <h1 id="nav_title">Michal Forman</h1>
       </div>
-      <div id="navlinks_container" class="navbar_container">
-        <a href="./pages/about_me.html"><h3>about me</h3></a>
-        <a href="./pages/contact.html"><h3>contact</h3></a>
-        <a
-          href="./IMG/resume.pdf"
-          download="Michal_Forman_resume.pdf"
-          target="_blank"
-          ><div id="download_cv_button">
-            <h3 id="download_cv_text">download CV</h3>
-          </div></a
-        >
+      <div id="nav_links_container">
+        <a href="./index.html" id="active_page"><span>#</span>home</a>
+        <a href="./pages/work.html"><span>#</span>work</a>
+        <a href="./pages/about_me.html"><span>#</span>about-me</a>
+        <a href="./pages/contact.html"><span>#</span>contact</a>
+        <div id="dropdown-btn">
+          EN<img src="./IMG/arrow_down.png" />
+          <div id="dropdown-content">
+            <button>CZ</button>
+            <button>DE</button>
+          </div>
+        </div>
       </div>
     </nav>
-    <main>
-      <img id="center_image" src="IMG/center_image.png"></img>
-      <!-- Programming card -->
-      <a href="./pages/programming.html">
-        <div class="card_container" id="programming_card">
-          <div class="card">
-            <div class="card_title">
-              <h2>programming</h2>
-              <hr/>
-            </div>
-            <div class="description">
-              <p>Exploring my journey in programming, showcasing skills, and sharing my portfolio.</p>
-            </div>
-          </div>
-          <div class="mini_rectangle">
-            <img src="IMG/programming_logo.png" class="icon"/>
-          </div>
-        </div>
-      </a>
-        <!-- Hobbies card -->
-      <a href="./pages/hobbies.html">
-        <div class="card_container" id="hobbies_card">
-          <div class="card">
-            <div class="card_title">
-              <h2>Hobbies</h2>
-              <hr/>
-            </div>
-            <div class="description">
-              <p>Sharing my hobbies and what I love doing outside of work and school.</p>
-            </div>
-          </div>
-          <div class="mini_rectangle">
-            <img src="IMG/hobbies_logo.png" class="icon"/>
-          </div>
-        </div>
-      </a>
-        <!-- Start-up card -->
-      <a href="./pages/start-up.html">
-        <div class="card_container" id="start-up_card">
-          <div class="card">
-            <div class="card_title">
-              <h2>Start-up</h2>
-              <hr/>
-            </div>
-            <div class="description">
-              <p>Baker’s Paradise, business selling beautiful 3D-printed cookie-cutters.</p>
-            </div>
-          </div>
-          <div class="mini_rectangle">
-            <img src="IMG/bakers_paradise_logo.png" class="icon"/>
-          </div>
-        </div>
-      </a>
-    </main>
   </body>
 </html>
