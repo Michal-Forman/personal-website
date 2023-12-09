@@ -56,11 +56,15 @@ span {
   color: var(--color-primary);
 }
 
+/* Navbar */
+
 nav {
   position: fixed;
   height: 61px;
   display: flex;
   justify-content: space-between;
+  background-color: var(--color-background);
+  z-index: 1;
 }
 
 #logo_container {
@@ -157,6 +161,8 @@ nav {
   color: var(--color-white);
 }
 
+/* Social media sidebar */
+
 #fixed_social_media {
   position: fixed;
   top: 0;
@@ -168,6 +174,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  z-index: 1;
 }
 
 #line_down {
@@ -185,6 +192,8 @@ nav {
 #fixed_social_media img {
   height: 20px;
 }
+
+/* Landing area */
 
 #hero_text {
   position: absolute;
@@ -319,4 +328,54 @@ nav {
   height: 91px;
   width: 91px;
   border: 1px solid var(--color-gray);
+}
+
+/* Projects area */
+
+#separator_container {
+  position: absolute;
+  top: 990px;
+  left: 10%;
+  right: 10%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+#separator_container h1 {
+  color: var(--color-white);
+  font-weight: 500;
+  font-size: 2rem;
+  white-space: nowrap;
+}
+
+#separator {
+  height: 1px;
+  width: 511px !important;
+  background-color: var(--color-primary);
+  margin-left: 16px;
+}
+
+#separator_container h3 {
+  color: var(--color-white);
+  font-weight: 500;
+  font-size: 1rem;
+  white-space: nowrap;
+}
+
+#view_all_button {
+  position: absolute;
+  top: 990px;
+  left: calc(90% - 138px);
+  width: 138px;
+  height: 37px;
+  color: var(--color-white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#view_all_button h3 {
+  font-size: 1rem;
+  font-weight: 500;
 }
