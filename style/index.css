@@ -24,7 +24,7 @@ body {
   padding: 0;
   width: 100vw;
   height: 100%;
-  overflow-x: hidden;
+  overflow-x: hidden !important;
 }
 
 h1 {
@@ -37,6 +37,10 @@ h2 {
   font-size: 1rem;
   font-weight: 1000;
   margin: 0;
+}
+
+p {
+  line-height: 150%;
 }
 
 a {
@@ -338,6 +342,7 @@ nav {
   height: 91px;
   width: 91px;
   border: 1px solid var(--color-gray);
+  overflow: hidden;
 }
 
 /* Projects area */
@@ -518,6 +523,7 @@ nav {
   height: 155px;
   width: 155px;
   border: 1px solid var(--color-gray);
+  overflow: hidden;
 }
 
 /* Skills area */
@@ -605,4 +611,252 @@ nav {
   width: 220px;
   margin-left: 16px;
   margin-top: 16px;
+}
+
+/* About_me area */
+
+#third_separator_container {
+  top: 2270px;
+}
+
+#third_separator_container .separator {
+  width: 326px !important;
+}
+
+#about_me_container {
+  position: absolute;
+  top: 2335px;
+  width: 515px;
+}
+
+#about_me_container p {
+  color: var(--color-gray);
+  font-size: 1rem;
+}
+
+#about_me_container h2 {
+  color: var(--color-white);
+  font-weight: 500;
+  font-size: 1rem;
+  white-space: nowrap;
+}
+
+#about_me_container a {
+  width: 148px;
+  height: 37px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--color-primary);
+  color: var(--color-white);
+  transition: background-color 0.5s ease;
+}
+
+#about_me_container a:hover {
+  background-color: var(--color-primary);
+}
+
+#about_me_container a:hover h2 {
+  color: var(--color-background);
+}
+
+#about_me_image {
+  position: absolute;
+  width: 650px;
+  height: 446px;
+  top: 2350px;
+  left: calc(100% - 620px);
+}
+
+#about_me_image_border {
+  position: absolute;
+  top: 2795px;
+  width: 353px;
+  height: 1px;
+  left: calc(100% - 620px);
+  background-color: var(--color-primary);
+}
+
+/* Contact area */
+
+#fourth_separator_container {
+  top: 3000px;
+}
+
+#fourth_separator_container .separator {
+  width: 127px !important;
+}
+
+#contact_text {
+  position: absolute;
+  top: 3065px;
+  left: 10%;
+  width: 505px;
+  color: var(--color-gray);
+}
+
+#contact_card {
+  position: absolute;
+  top: 3065px;
+  left: calc(90% - 324px);
+  width: 290px;
+  height: 107px;
+  border: 1px solid var(--color-gray);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 16px;
+}
+
+#contact_card h2 {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 4px;
+  color: var(--color-white);
+}
+
+#contact_link {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+}
+
+#contact_link img {
+  height: 20px;
+  width: 20px;
+}
+
+#contact_link p {
+  margin: 0;
+  margin-left: 8px;
+  color: var(--color-gray);
+  font-size: 1rem;
+}
+
+#contact_link:hover p {
+  color: var(--color-white);
+}
+
+#contact_link2 {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+}
+
+#contact_link2 img {
+  height: 17px;
+  width: 23px;
+}
+
+#contact_link2 p {
+  margin: 0;
+  margin-left: 8px;
+  color: var(--color-gray);
+  font-size: 1rem;
+}
+
+#contact_link2:hover p {
+  color: var(--color-white);
+}
+
+#square3 {
+  position: absolute;
+  top: 2400px;
+  left: -70px;
+  height: 155px;
+  width: 155px;
+  border: 1px solid var(--color-gray);
+  overflow: hidden;
+}
+
+/* Footer area */
+
+#footer_separator {
+  position: absolute;
+  top: 3350px;
+  left: 0;
+  right: 0;
+  height: 1px;
+  width: 100%;
+  background-color: var(--color-gray);
+}
+
+#email_container {
+  position: absolute;
+  top: 3382px;
+  display: flex;
+  align-items: center;
+}
+
+#email_container img {
+  height: 16px;
+  width: 16px;
+}
+
+#email_container h2 {
+  margin-left: 9px;
+  color: var(--color-white);
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+#email_container p {
+  margin: 0;
+  margin-left: 24px;
+  color: var(--color-gray);
+  font-size: 1rem;
+}
+
+#job_title {
+  position: absolute;
+  top: 3422px;
+  left: 10%;
+  color: var(--color-white);
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+#footer_media {
+  position: absolute;
+  top: 3382px;
+  left: calc(90% - 102px);
+  width: 104px;
+  color: var(--color-white);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+#footer_media h2 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 12px;
+}
+
+#footer_links img {
+  height: 20px;
+  width: 20px;
+  margin-right: 8px;
+}
+
+#copyright {
+  position: absolute;
+  top: 3540px;
+  color: var(--color-gray);
+  font-size: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#dots {
+  position: absolute;
+  top: 3100px;
+  left: -40px;
+  height: 103px;
+  width: 103px;
 }
