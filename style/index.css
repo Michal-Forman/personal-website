@@ -378,7 +378,7 @@ nav {
   white-space: nowrap;
 }
 
-#view_all_button {
+#translatable_view_all_button {
   position: absolute;
   top: 990px;
   left: calc(90% - 138px);
@@ -390,7 +390,7 @@ nav {
   align-items: center;
 }
 
-#view_all_button h3 {
+#translatable_view_all_button h3 {
   font-size: 1rem;
   font-weight: 500;
 }
@@ -687,7 +687,7 @@ nav {
   width: 127px !important;
 }
 
-#contact_text {
+#translatable_contact_text {
   position: absolute;
   top: 3065px;
   left: 10%;
@@ -810,7 +810,7 @@ nav {
   font-size: 1rem;
 }
 
-#job_title {
+#translatable_job_title {
   position: absolute;
   top: 3422px;
   left: 10%;
