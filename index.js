@@ -1,3 +1,8 @@
+// Add automatic date-change of copyright
+let date = new Date();
+let year = date.getFullYear();
+let yearSpan = document.getElementById("year");
+yearSpan.innerHTML = year;
 // Add event listeners for links, that lead to so far non-existing pages
 otherPageLinks = document.getElementsByClassName("other_page_link");
 for (let i = 0; i < otherPageLinks.length; i++) {

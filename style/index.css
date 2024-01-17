@@ -860,3 +860,7 @@ nav {
   height: 103px;
   width: 103px;
 }
+
+#year {
+  color: var(--color-gray);
+}
