@@ -21,6 +21,9 @@ let languages = ["en", "cz", "de"];
 let activeLanguage = languages[0];
 
 function language1_clicked() {
+  // Until translation copy is, disable this function
+  alert("This page is still in development. Please come back later.");
+  return;
   languageButton1.innerHTML = activeLanguage.toUpperCase();
   dropdownBtnTitle.innerHTML = languages[1].toUpperCase();
   [languages[0], languages[1]] = [languages[1], languages[0]];
@@ -29,6 +32,9 @@ function language1_clicked() {
 }
 
 function language2_clicked() {
+  // Until translation copy is, disable this function
+  alert("This page is still in development. Please come back later.");
+  return;
   languageButton2.innerHTML = activeLanguage.toUpperCase();
   dropdownBtnTitle.innerHTML = languages[2].toUpperCase();
   [languages[0], languages[2]] = [languages[2], languages[0]];
