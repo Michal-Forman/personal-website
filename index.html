@@ -22,7 +22,7 @@
       </div>
       <div id="nav_links_container">
         <a id="translatable_home" href="./index.html" id="active_page"><span>#</span>home</a>
-        <a id="tranlatable_home" href="./pages/work.html" class="other_page_link"><span>#</span>work</a>
+        <a id="tranlatable_work" href="./pages/work.html" class="other_page_link"><span>#</span>work</a>
         <a id="translatable_about_me" href="./pages/about_me.html" class="other_page_link"><span>#</span>about-me</a>
         <a id="translatable_contact" href="./pages/contact.html" class="other_page_link"><span>#</span>contact</a>
         <div id="dropdown-btn">
@@ -33,8 +33,29 @@
           </div>
         </div>
       </div>
+      <!-- Mobile version navbar -->
+      <img src="./IMG/hamburger_menu.png" id="hamburger_menu" />
+      <div id="nav_links_container_mobile">
+        <div id="logo_container_mobile">
+          <img id="nav_logo_mobile" src="IMG/logo.svg" />
+          <h2 id="nav_title_mobile">Michal Forman</h2>
+        </div>
+        <img src="./IMG/cross.png" id="hamburger_menu" />
+        <a id="translatable_home_mobile" href="./index.html" id="active_page"><span>#</span>home</a>
+        <a id="tranlatable_work_mobile" href="./pages/work.html" class="other_page_link"><span>#</span>work</a>
+        <a id="translatable_about_me_mobile" href="./pages/about_me.html" class="other_page_link"><span>#</span>about-me</a>
+        <a id="translatable_contact_mobile" href="./pages/contact.html" class="other_page_link"><span>#</span>contact</a>
+        <div id="dropdown-btn_mobile">
+          <p id="dropdown-btn_title_mobile">EN</p><img src="./IMG/arrow_down.png" />
+          <div id="dropdown-content_mobile">
+            <button id="language1_mobile" onclick="language1_clicked()" class="language_button">CZ</button>
+            <button id="language2_mobile" onclick="language2_clicked()" class="language_button">DE</button>
+          </div>
+        </div>
+      </div>
     </nav>
     <div id="behind_navbar"></div>
+    <!-- Fixed social media side bar -->
     <div id="fixed_social_media">
       <div id="line_down"></div>
       <a href="https://github.com/Michal-Forman" target="_blank"
@@ -43,7 +64,7 @@
       <a href="https://www.linkedin.com/in/michal-forman/" target="_blank"
         ><img src="./IMG/linkedin.png"
       /></a>
-      <a href="https://www.instagram.com/misa_forman/" target="_blank"
+      <a href="https://www.instagram.com/michal_forman_/" target="_blank"
         ><img src="./IMG/instagram.png"
       /></a>
     </div>
@@ -72,7 +93,7 @@ I specialize in developing reliable web and mobile applications tailored to meet
       <div id="author_container"><h2>- Cory House</h2></div>
       <div id="square1"></div>
       <!--Projects area-->
-      <div class="separator_container">
+      <div id="first_separator_container" class="separator_container">
         <h1 id="translatable_projects_title"><span>#</span>projects</h1>
         <div class="separator"></div>
       </div>
@@ -103,7 +124,7 @@ I specialize in developing reliable web and mobile applications tailored to meet
             </div>
           </div>
         </div>
-        <div class="project_container">
+        <div id="luminary" class="project_container">
           <img src="IMG/luminary.png" />
           <div class="project_technologies project_technologies2">
             <p>HTML CSS Javascript React Node.js Express.js</p>
@@ -255,7 +276,7 @@ I specialize in developing reliable web and mobile applications tailored to meet
           <a href="https://www.linkedin.com/in/michal-forman/" target="_blank"
             ><img src="./IMG/linkedin.png"
           /></a>
-          <a href="https://www.instagram.com/misa_forman/" target="_blank"
+          <a href="https://www.instagram.com/michal_forman_/" target="_blank"
             ><img src="./IMG/instagram.png"
           /></a>
         </div>

@@ -62,6 +62,10 @@ span {
 
 /* Navbar */
 
+#hamburger_menu {
+  display: none;
+}
+
 nav {
   position: fixed;
   height: 61px;
@@ -110,7 +114,7 @@ nav {
   margin-left: 42px;
 }
 
-#active_page {
+#translatable_home {
   color: var(--color-white);
 }
 
@@ -173,6 +177,18 @@ nav {
 
 #dropdown-content button:hover {
   color: var(--color-white);
+}
+
+/* Nav bar mobile */
+
+#nav_links_container_mobile {
+  position: fixed;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--color-background);
+  z-index: 3;
+  display: none;
 }
 
 /* Social media sidebar */
@@ -554,6 +570,7 @@ nav {
   top: 1800px;
   height: 272px;
   width: 50%;
+  max-width: 785px;
 }
 
 .skillset_container {
@@ -863,4 +880,138 @@ nav {
 
 #year {
   color: var(--color-gray);
+}
+
+/* Media queries */
+@media screen and (max-width: 1260px) {
+  #simonGame {
+    display: none;
+  }
+  .all_projects_container {
+    justify-content: space-evenly;
+  }
+  #hero_image {
+    position: absolute;
+    top: 136px;
+    left: calc(90% - 353px);
+    height: 373px;
+  }
+
+  #current_work_container {
+    position: absolute;
+    top: 509px;
+    left: calc(90% - 320px);
+    width: 402px;
+    height: 37px;
+    border: 1px solid var(--color-gray);
+    display: flex;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 1173px) {
+  #all_skillsets_container {
+    width: 600px;
+    left: 10%;
+  }
+  #patterns_group {
+    left: 70%;
+  }
+}
+
+@media screen and (max-width: 1120px) {
+  #about_me_image {
+    left: calc(100% - 420px);
+  }
+  #about_me_image_border {
+    left: calc(100% - 420px);
+  }
+  #hero_image {
+    height: 295px;
+    left: calc(90% - 295px);
+    top: 194px;
+  }
+  #current_work_container {
+    top: 490px;
+  }
+  #square1 {
+    display: none;
+  }
+  #first_separator_container {
+    width: 650px;
+  }
+}
+
+@media screen and (max-width: 1030px) {
+  #patterns_group {
+    display: none;
+  }
+  #contact_card {
+    left: 10%;
+    top: 3150px;
+  }
+  #hero_text {
+    max-width: 400px;
+  }
+  #first_separator_container {
+    width: 550px;
+  }
+}
+
+@media screen and (max-width: 910px) {
+  #quote_container {
+    display: none;
+  }
+  #author_container {
+    display: none;
+  }
+  #hero_text {
+    max-width: 800px;
+  }
+  #hero_image {
+    top: 400px;
+    height: 353px;
+    left: calc(50% - 176px);
+  }
+  #current_work_container {
+    top: 753px;
+    left: calc(50% - 176px);
+  }
+  #square3 {
+    left: -100px;
+  }
+  #about_me_image {
+    display: none;
+  }
+  #about_me_image_border {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 860px) {
+  #luminary {
+    display: none;
+  }
+  #first_separator_container {
+    width: 450px;
+  }
+  #hero_image {
+    top: 500px;
+  }
+  #current_work_container {
+    top: 853px;
+}
+
+@media screen and (max-width: 770px) {
+  #nav_links_container {
+    display: none;
+  }
+  #hamburger_menu {
+    position: fixed;
+    z-index: 2;
+    display: block;
+    height: 12px;
+    left: calc(90% - 50px);
+    margin-top: 32px;
+  }
 }

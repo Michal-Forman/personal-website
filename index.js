@@ -12,11 +12,6 @@ for (let i = 0; i < otherPageLinks.length; i++) {
   });
 }
 
-// Add error message for small screens
-if (window.innerWidth < 1200) {
-  alert("This page does not work on your screen size. Please come back later.");
-}
-
 // Add translation feature
 let languageButton1 = document.getElementById("language1");
 let languageButton2 = document.getElementById("language2");
