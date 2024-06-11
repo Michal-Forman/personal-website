@@ -1000,6 +1000,10 @@ nav {
   }
   #current_work_container {
     top: 853px;
+  }
+  #dots {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 770px) {
@@ -1013,5 +1017,51 @@ nav {
     height: 12px;
     left: calc(90% - 50px);
     margin-top: 32px;
+  }
+}
+
+@media screen and (max-width: 730px) {
+  #first_separator_container {
+    width: 350px;
+  }
+  #all_skillsets_container {
+    left: 0;
+    width: 100%;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+  .skillset_container {
+    width: 300px !important;
+    margin: 0 !important;
+    margin-bottom: 16px !important;
+  }
+  #fourth_skillset_container {
+    left: 0 !important;
+    top: 0 !important;
+  }
+  #third_separator_container {
+    top: 2450px;
+  }
+  #about_me_container {
+    top: 2500px;
+  }
+  .skillset_container:nth-child(2n) {
+    margin-left: 40px !important;
+  }
+  .skillset_container:nth-child(2n + 1) {
+    margin-right: 40px !important;
+  }
+  #square3 {
+    display: none;
+  }
+}
+@media screen and (max-width: 610px) {
+  #first_separator_container {
+    width: 280px;
+  }
+  #footer_email {
+    display: none;
   }
 }
