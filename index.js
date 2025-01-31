@@ -45,3 +45,13 @@ function language2_clicked() {
 function translate() {
   console.log(activeLanguage);
 }
+
+function checkIfWindowIsBigEnough() {
+  const contentDiv = document.getElementById("content");
+  if (window.innerWidth < 768) {
+    contentDiv.innerHTML =
+      "<h1 id='warningTxt'>This website only works on desktop. (I am too lazy to make a phone version)</h1>";
+  }
+}
+
+checkIfWindowIsBigEnough();

@@ -882,6 +882,16 @@ nav {
   color: var(--color-gray);
 }
 
+/* Extra stuff */
+
+#warningTxt {
+  text-align: center;
+  color: var(--color-white);
+  margin-top: 32px;
+  font-size: 1rem;
+  padding: 16px;
+}
+
 /* Media queries */
 @media screen and (max-width: 1260px) {
   #simonGame {
